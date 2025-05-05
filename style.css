@@ -1,0 +1,650 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 0rem 9rem;
+  background-image: linear-gradient(to top, #f0f0f0, #f4f4f4);
+}
+
+/* Ana Header Konteyneri: Tüm üst kısımdaki elemanları kapsar */
+.header-container {
+  display: flex;
+  /* Flexbox düzeni aktif hale getirildi */
+  justify-content: space-between;
+  /* Elemanlar arasındaki boşlukları eşit dağıtır */
+  align-items: center;
+  /* Elemanları dikeyde ortalar */
+  flex-wrap: wrap;
+  /* Ekran küçüldükçe öğeler sarmaya başlar */
+  padding-bottom: 0px;
+  padding-top: 0;
+  margin-top: 0;
+  /* background-color:rgba(218, 213, 213, 0.167); */
+}
+
+/* Logo Konteynerleri (Üniversite ve Kapı Logoları) */
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+  /* Logoyu yatayda ortalar */
+  align-items: center;
+  /* Logoyu dikeyde ortalar */
+
+
+}
+
+/* Üniversite Logosu */
+#university-logo img {
+  max-width: 75px;
+  height: auto;
+  margin-top: 0;
+}
+
+/* Kapı Logosu */
+#entrance-logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 0;
+}
+
+/* Üniversite Adı ve Açıklaması */
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 0;
+
+}
+
+.university-name {
+  margin-bottom: 0;
+}
+
+/* Sosyal Medya İkonları ve Dil Seçenekleri Konteyneri */
+.header-social-language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* Sosyal medya ikonları ile dil seçenekleri arasında boşluk bırakır */
+}
+
+/* Sosyal Medya İkonları */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  /* İkonlar arasına boşluk bırakır */
+  background-color: rgba(128, 128, 128, 0.874);
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  height: 28px;
+  margin-top: 10px;
+  border: 4px solid rgba(255, 255, 255, 0.804);
+  box-sizing: content-box;
+}
+
+.fa-brands {
+  color: aliceblue;
+}
+
+.italic-large-text {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+/* Sosyal Medya İkonlarına Boyut ve Stil Verme */
+.social-icons i {
+  font-size: 24px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  display: flex;
+  margin-top: 4px;
+  justify-content: center;
+  align-items: center;
+  border: 0.001px solid rgba(0, 0, 0, 0.159);
+}
+
+
+
+/* Dil Seçenekleri */
+.language-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* Sosyal ikonlardan biraz uzaklaştırır */
+  margin-right: 0;
+
+}
+
+#language-turkish {
+  background-color: black;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.italic-text {
+  margin-left: 5px;
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.italic-text:hover {
+  background-color: black;
+  color: grey;
+  border-radius: 5px 5px 0 0;
+}
+
+#language-turkish:hover {
+  color: grey;
+}
+
+/* Mobil uyum için düzenleme (küçük ekranlarda dikey sıralama) */
+
+
+@media (max-width:1300px) {
+  header, .navbar-container, .slider-all {
+    padding: 0rem !important;
+  }
+
+  .center-navbar-container {
+    padding: 0rem !important;
+  }
+}
+
+@media (max-width:1200px) {
+  .header-container {
+    padding-left: 6px;
+    padding-right: 0;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .social-icons {
+    display: none;
+  }
+
+  .language-options {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .header-container {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+.full-width-navbar {
+  width: 100%;
+  background-color: grey;
+
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-list li a {
+
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar-list li:hover {
+  background-color: rgb(109, 105, 105);
+
+}
+
+@media (max-width: 767px) {
+  .full-width-navbar {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navbar-container{
+    display: none;
+  }
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-list li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(50, 49, 49, 0.269);
+    border-bottom-width: 100%;
+
+
+  }
+
+  .navbar-list li a {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
+
+  }
+
+  .navbar-list li a:hover {
+    background-color: rgb(109, 105, 105);
+    width: 100%;
+  }
+
+  .navbar-list li:last-child {
+    border-bottom: none;
+    /* Son öğeye çizgi gelmez */
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+  .navbar {
+    background-color: grey;
+    height: 50px;
+  }
+
+  .navbar-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-mobile img {
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .mobile-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+
+
+  }
+
+  .mobile-icons i {
+
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #1818182f;
+    border-radius: 20%;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .mobile-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width:467px) {
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-text {
+    font-size: 10px;
+    text-align: center;
+    padding-left: 100px;
+  }
+}
+
+@media (min-width:768px) {
+  #mobileMenu {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+.full-screen-menu {
+  /* Başlangıçta gizli */
+  display: none;
+  width: 100%;
+  margin-top: 5.3px;
+  background-color: grey;
+  /* Menünün koyu arka planı */
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Taşan içerik gizli */
+  transition: height 0.5s ease;
+  /* Yavaşça açılacak animasyon */
+  z-index: 999;
+
+}
+
+.full-screen-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.full-screen-menu li {
+  border-bottom: 1px solid rgba(50, 49, 49, 0.269);
+  border-bottom-width: 100%;
+  padding: .75rem;
+
+}
+
+.full-screen-menu li:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.full-screen-menu a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.full-screen-menu li:hover {
+  background-color: rgb(109, 105, 105);
+}
+.full-screen-menu li {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.indicator-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background-color: grey;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-btn.active {
+  background-color: rgb(238, 238, 5);
+}
+
+
+
+
+/* Slider'ın yüksekliğini ayarlıyoruz ve responsive hale getiriyoruz */
+#customCarousel {
+  max-height: 500px;
+  /* Genel yükseklik */
+  overflow: hidden;
+  /* Taşma engelleniyor */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+#customCarousel .carousel-inner {
+  height: 100%;
+}
+
+/* Resimler bozulmasın, cover olarak ayarlansın */
+#customCarousel .carousel-item img {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Okların pozisyonunu ayarlıyoruz */
+.carousel-control-prev, .carousel-control-next {
+  z-index: 10;
+  /* Okları önde tutuyoruz */
+  width: 32px !important;
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+  color: white;
+  background-color: #212121a1;
+  padding: 1.5rem 0rem !important;
+}
+
+.carousel-control-next {
+  right: 0px;
+
+}
+
+.carousel-control-prev {
+  left: 0px;
+}
+
+/* ALTINDAKİ NOKTALAR VE "TÜM MANŞETLER" YAZISI */
+.slider-bottom {
+  margin-top: 20px;
+  /* Slider ile alt kısımdaki içerik arasına boşluk bırakıyoruz */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-indicators {
+  display: flex;
+  justify-content: center;
+  /* Ortada hizalanıyor */
+  gap: 10px;
+}
+
+.indicator-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-btn.active,
+.indicator-btn:hover {
+  background-color: #f3d80d;
+}
+
+.manset-center a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.704);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.manset-center a:hover {
+  color: grey;
+}
+
+.slider-bottom {
+  margin-top: 0;
+}
+
+/* Responsive ayarlamalar - ekran 767px ve daha küçük */
+@media (max-width: 767px) {
+
+  /* Slider yüksekliğini küçük ekranlarda düşürüyoruz */
+  #customCarousel {
+    max-height: 300px;
+    /* Küçük ekranlarda daha düşük yükseklik */
+  }
+
+  /* Noktaların arası ve boyutlarını küçültüyoruz */
+  .custom-indicators {
+    gap: 5px;
+  }
+
+  .indicator-btn {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Tüm Manşetler yazısının boyutunu küçültüyoruz */
+  .manset-center a {
+    font-size: 14px;
+  }
+}
+
+
+
+.center-navbar-container{
+  background-color: lightblue;
+}
+.center-navbar-container li:hover{
+background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-container {
+  padding: 0rem 9rem;
+  background-color: #878888;
+}
+
+.navbar-list li {
+  flex: 1;
+  text-align: center;
+  padding: .75rem 0rem;
+}
+
+.slider-all {
+  padding: 0rem 9rem;
+
+}
+
+.slider-all .manset-center {
+  right: 1rem;
+}
+
+.center-navbar-container {
+  padding: 0rem 9rem;
+}

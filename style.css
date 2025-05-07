@@ -573,10 +573,10 @@ header {
 
 
 .center-navbar-container{
-  background-color: lightblue;
+  background-color: #66acb9 ;
 }
 .center-navbar-container li:hover{
-background-color: gray;
+background-color: rgba(128, 128, 128, 0.263);
 }
 
 
@@ -588,46 +588,14 @@ background-color: gray;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navbar-container {
+.navbar-container{
   padding: 0rem 9rem;
-  background-color: #878888;
+  background-color: #888887;
+  
+}
+
+.navbar-container:hover{
+  cursor:pointer;
 }
 
 .navbar-list li {
@@ -648,3 +616,248 @@ background-color: gray;
 .center-navbar-container {
   padding: 0rem 9rem;
 }
+.center-navbar-container:hover{
+  cursor:pointer;
+}
+
+.navbar-icon{
+  font-size: 40px;
+  color:white
+}
+
+.navbar-icon-text{
+  text-decoration: none;
+  color:white;
+  font-size:13px;
+  font-weight: 100;
+
+}
+
+
+
+.duyurular-box {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.duyuru-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.duyuru-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.main-all{
+  padding:0rem 9rem;
+  background-color: rgba(128, 128, 128, 0.097);
+
+}
+
+@media(max-width:768px){
+  .main-all{
+    padding:0rem 0rem;
+  }
+}
+
+.main{
+  background-color: white;
+}
+
+.main-container , .haberler-all{
+  padding:0rem 1rem;
+}
+
+
+
+.duyurular h3 , .haberler-baslik h3{
+  background-color: rgba(128, 128, 128, 0.069);
+  padding:5px 5px;
+  border-radius: 7px;
+  color:#333;
+  
+  
+}
+
+.duyuru{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  background-color: #cccccc38;
+  border-radius: 10px;
+}
+
+.tarih{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.587);
+  border-top-left-radius: 8px;  
+  border-bottom-left-radius: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.tarih p{
+  margin:0px 0px;
+  font-style: italic;
+  font-weight: 200;
+  
+}
+
+.duyuru-link{
+  padding-left: 5px;
+}
+
+.duyuru-link:hover{
+  text-decoration: none;
+  color:grey;
+
+}
+
+.duyuru:hover{
+  background-color: rgba(128, 128, 128, 0.283);
+  cursor: pointer;
+}
+
+.tum-duyurular-baslik a{
+  text-decoration: none;
+  background-color: grey;
+  color:white;
+  padding:2px;
+}
+
+.tum-duyurular-baslik a:hover{
+  color:#333
+}
+
+.anket{
+  display: flex;
+  align-items: flex-start;
+  padding:10px;
+  
+}
+
+.anket i{
+  color:white;
+  background-color: #66acb9;
+  border-radius: 10px;
+  padding:15px;
+  font-size:40px;
+  margin-right:5px;
+
+  
+}
+
+.tum-duyurular-alt{
+  padding-bottom: 30px;
+}
+
+.anket:hover{
+  cursor:pointer;
+  background-color: rgba(128, 128, 128, 0.185);
+  border-radius: 10px;
+}
+
+
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer-all{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("imagess/footer.jpeg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:450px;
+}
+@media (max-width:673px){
+  .footer-all{
+    height:550px;
+  }
+}
+
+
+
+.footer{
+  background-color: rgb(49, 49, 49);
+  padding:10px;
+}
+
+.footer p{
+  text-align: center;
+  color:white;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 100;
+
+}
+
+.iletisim{
+  color:white;
+}
+
+
+.logos a{
+  padding:28px 10px;
+  background-color: transparent;
+  border: 0.1px solid #fffefe
+  
+}
+.logos a:hover{
+  background-color: white;
+  padding:28px 10px;
+  
+  
+}
+
+.logos a img{
+  width:70px;
+}
+
+.baglantılar h4{
+  color:white;
+}
+
+.baglantılar a{
+  color:white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 7px;;
+
+
+}
+.baglantılar a:hover{
+  color:grey;
+}
+
+.konum p{
+  font-weight: 100;
+}
+
+.footer span{
+  color:green
+}
+
+
+.navbar{
+  position:fixed;
+  z-index: 99999;
+}
+
+
+
+

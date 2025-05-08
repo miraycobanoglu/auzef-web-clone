@@ -667,13 +667,8 @@ background-color: rgba(128, 128, 128, 0.263);
   background-color: white;
 }
 
-.main-container , .haberler-all{
-  padding:0rem 1rem;
-}
 
-
-
-.duyurular h3 , .haberler-baslik h3{
+.duyurular h3 , .haberler-baslik h3, .hizli-erisim-baslik h3, .etkinlik-takvimi-baslik h3{
   background-color: rgba(128, 128, 128, 0.069);
   padding:5px 5px;
   border-radius: 7px;
@@ -853,9 +848,30 @@ background-color: rgba(128, 128, 128, 0.263);
 }
 
 
-.navbar{
-  position:fixed;
-  z-index: 99999;
+.erisim-images{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.hizli-erisim-img1{
+  margin-bottom:10px;
+  cursor: pointer;
+  
+} 
+.hizli-erisim-img2{
+  cursor:pointer;
+}
+
+.erisim-img{
+  height: 130px;
+  width: 100%;
+  
+}
+.takvim-img1{
+  height:250px;
+  width:100%;
+  cursor:pointer;
 }
 
 

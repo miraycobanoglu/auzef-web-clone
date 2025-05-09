@@ -257,7 +257,7 @@ header {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-container{
     display: none;
   }
@@ -659,7 +659,7 @@ background-color: rgba(128, 128, 128, 0.263);
 
 @media(max-width:768px){
   .main-all{
-    padding:0rem 0rem;
+    padding:0rem 2rem;
   }
 }
 
@@ -776,6 +776,7 @@ background-color: rgba(128, 128, 128, 0.263);
   background-repeat: no-repeat;
   background-position: center;
   height:450px;
+  width: 100%;
 }
 @media (max-width:673px){
   .footer-all{
@@ -874,10 +875,23 @@ background-color: rgba(128, 128, 128, 0.263);
   cursor:pointer;
 }
 
+@media (min-width:767px){
+
+  .slider-all{
+    margin-top:148px;
+  }
+}
+
+@media (max-width:767px){
+  .slider-all{
+    margin-top: 50px;
+  }
+}
 
 
+@media (max-width:767px){
+  .navbar-icon-all{
+    width: 100%;
 
-
-
-
-
+  }
+}

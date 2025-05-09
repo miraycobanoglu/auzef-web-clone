@@ -14,9 +14,9 @@
 </head>
 
 <body>
- <div> <!--header başlangıç-->
+ <div class="w-100" style="position: fixed;top: 0px; z-index: 9999;"> <!--header başlangıç-->
   <header class="">
-    <div class="header-container">
+    <div class="header-container" >
       <div class="header1">
         <!-- Üst Kısım: Üniversite Logosu -->
         <div class="header-logo-container" id="university-logo">
@@ -72,8 +72,8 @@
   </nav>
 </section>
 </div>
-  <nav class="navbar" id="navbar">
-    <div class="navbar-mobile">
+  <nav class="w-100 navbar" id="navbar" style="position: fixed;top: 0px;z-index: 9999;">
+    <div class="navbar-mobile" >
       <div class="logo-mobile">
         <img src="imagess/auzef.png" id="university-logo-mobile">
       </div>
@@ -205,13 +205,10 @@
 
 
 
-
-
-
- <section class="main-all">
+ <section class="main-all w-100">
   <div class="main">
    <div class="row main gx-5">
-    <div class="main-duyurular col-12 col-md-8 ">
+    <div class="main-duyurular col-12 col-md-8">
       <div class="duyurular ">
         <div class="duyurular-baslik">
           <h3 class="mb-3 text-center mt-5">Duyurular</h3>
@@ -392,16 +389,65 @@
 
 
     <div class="row main gx-5 haberler-all">
-      <div class="col-12 haberler">
+      <div class="col-12 haberler" id="haberler">
         <div class="haberler-baslik">
           <h3 class="text-center">Haberler</h3>
         </div>
-        <div class="haberler-slider">
-          haberler gelicek
-        </div>
+        <div class="haberler-slider row">
+
+          <div id="newsCarousel" class="carousel slide px-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              
+              <!-- 1. SLIDE -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center align-items-start">
+                  <div class="col-md-4 news-slider-item-card">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="1">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                  <div class="col-md-4 news-slider-item-card">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="2">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                  <div class="col-md-4 news-slider-item-card">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="3">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- 2. SLIDE -->
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-start">
+                  <div class="col-md-4">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="4">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="5">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://cdn.istanbul.edu.tr/FileHandler.ashx?f=5IcNd5OpMUad6fB4Zm-7jw" class="d-block w-100" alt="6">
+                    <p>AUZEF Çevrim İçi Panel | Yükseköğretimde Değişim ve Dönüşümü Anlamak</p>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+            <!-- Oklar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          
       </div>
       <div class="tum-duyurular-baslik text-center my-5">
-        <a href="#">Tüm Haberler</a>
+        <a href="#haberler">Tüm Haberler</a>
         </div>
 
     </div>
@@ -409,27 +455,25 @@
 
 
 
-    <div class="row main gx-5  haberler-all">
-      <div class="col-12 haberler">
-        <div class="haberler-baslik">
+    <div class="row main gx-5  haberler-all mx-0">
+      <div class="col-12 haberler" id="videolar">
+        <div class="haberler-baslik mt-3">
           <h3 class="text-center">Video Haberler</h3>
         </div>
         <div class="haberler-videolar">
-          videolar gelicek
+          <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 mb-5">
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/fz8BR1Ew73g?si=7RgK8GCKGMkaa8Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/fz8BR1Ew73g?si=7RgK8GCKGMkaa8Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/fz8BR1Ew73g?si=7RgK8GCKGMkaa8Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
       </div>
-      <div class="tum-duyurular-baslik text-center my-5">
-        <a href="#">Tüm Videolar</a>
+      <div class="tum-duyurular-baslik text-center mb-5">
+        <a href="#videolar">Tüm Videolar</a>
         </div>
+       
 
     </div>
-
-
-
-
-
-
-
 
 
   </div>
@@ -441,7 +485,7 @@
 
 
  <aside>
-  <div class="footer-all px-5 py-5 row">
+  <div class="footer-all px-5 mx-0 py-5 row">
     <div class="col-12 mb-4 col-sm-6 col-md-4 d-column iletisim">
       <h4>İletişim</h4>
       <div class="konum">
@@ -487,41 +531,12 @@
 
 
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <div class="d-flex flex-column justify-content-center align-items-center gap-2" style="position: fixed;bottom: 20px;right: 20px;z-index: 99999;">
+  <div id="arrow-top" onclick="topFunction()" class="py-1 px-2" style="background-color: rgba(0, 0, 0, 0.155); cursor: pointer;">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+  <img style="width: 75px; cursor: pointer;" alt="Chat Launcher" class="ecw-launcher-img" draggable="false" src="https://auzef-chatbot.istanbul.edu.tr/api/media/b14fb360-28ef-11ef-b6ce-5388da9743ca.png">
+ </div>
 
 
 

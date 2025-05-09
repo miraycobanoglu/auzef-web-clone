@@ -14,13 +14,10 @@ menuIcon.addEventListener("click", function() {
   }
 });
 
+
+
+
   
-
-
-
-
-
-
   const carousel = document.querySelector('#customCarousel');
   const indicators = document.querySelectorAll('.indicator-btn');
 
@@ -31,6 +28,22 @@ menuIcon.addEventListener("click", function() {
 
 
 
+
+
+const arrowTopButton = document.getElementById("arrow-top");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    arrowTopButton.style.display = "block";
+  } else {
+    arrowTopButton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
